@@ -39,5 +39,7 @@ while option != 0:
     elif option == 4:
         for food in food_list:
             print(food.type + " : " + food.kg + "kg")
+    elif option == 0:
+        quit()
     else:
         print("Wrong option")
