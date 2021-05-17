@@ -39,6 +39,16 @@ while option != 0:
     elif option == 4:
         for food in food_list:
             print(food.type + " : " + food.kg + "kg")
+    elif option == 5:
+        for dog in dog_list:
+            print(dog.name)
+        delete_dog = (input("select dog to delete :"))
+        for dog in dog_list:
+            if dog.name == delete_dog:
+                dog_list.remove(dog)
+                print(delete_dog + " Deleted!")
+            else:
+                print("Dog is not in the list !")
     elif option == 0:
         quit()
     else:
