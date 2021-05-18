@@ -13,8 +13,8 @@ class Dog:
 
 
 class Food:
-    def __init__(self, type, kg):
-        self.type = type
+    def __init__(self, typ, kg):
+        self.type = typ
         self.kg = kg
         print("Food created!")
 
