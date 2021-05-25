@@ -2,7 +2,8 @@ def menu():
     print("[1] Add Dog")
     print("[2] Add Food")
     print("[3] View Dogs")
-    print("[4] View dog food")
+    print("[4] View Dog Food")
+    print("[5] Delete Dog")
     print("[0] Quit")
 
 
