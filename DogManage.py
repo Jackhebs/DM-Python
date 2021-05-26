@@ -4,6 +4,7 @@ def menu():
     print("[3] View Dogs")
     print("[4] View Dog Food")
     print("[5] Delete Dog")
+    print("[6] Delete Dog Food")
     print("[0] Quit")
 
 
@@ -47,6 +48,13 @@ while option != 0:
             if dog.name == deleted_dog:
                 dog_list.remove(dog)
                 print(dog.name + ":" + "is deleted !")
+    elif option == 6:
+        delete_food = (input("Pick food to delete :"))
+        for food in food_list:
+            print(food.type, food.kg + "kg")
+            if food.type == delete_food:
+                food_list.remove(food)
+                print(food.type, food.kg, "kg" ":" + "is deleted !")
             else:
                 print("This dog is not in the list !")
     elif option == 0:
